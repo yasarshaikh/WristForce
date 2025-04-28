@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "WristForce",
+  "namespace": "",
+  "sfdcLoginUrl": "https://sf-virtual-hackathon-25.lightning.force.com",
+  "sourceApiVersion": "63.0"
+}
