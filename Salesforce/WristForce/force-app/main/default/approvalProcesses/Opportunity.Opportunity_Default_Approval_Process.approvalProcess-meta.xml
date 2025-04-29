@@ -3,15 +3,10 @@
     <active>true</active>
     <allowRecall>true</allowRecall>
     <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
         <type>owner</type>
-    </allowedSubmitters>
-    <allowedSubmitters>
-        <submitter>admin@sf.hackathon</submitter>
-        <type>user</type>
-    </allowedSubmitters>
-    <allowedSubmitters>
-        <submitter>einsteinuser@epam.com</submitter>
-        <type>user</type>
     </allowedSubmitters>
     <approvalPageFields>
         <field>Account</field>
@@ -20,14 +15,13 @@
         <field>Description</field>
         <field>StageName</field>
         <field>Amount</field>
-        <field>SDO_Sales_Discount__c</field>
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>einsteinuser@epam.com</name>
-                <type>user</type>
+                <name>Owner</name>
+                <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
