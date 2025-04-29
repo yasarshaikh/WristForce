@@ -1,0 +1,71 @@
+{
+	"keepObjectOrderWhileExecute": "true",
+	"objects": [
+		{
+			"query": "SELECT createable_true, updateable_true, Id, Name, RecordTypeId FROM Account",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT createable_true, updateable_true, Id, Name FROM Contact",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT createable_true, updateable_true FROM Lead",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT Id, CurrencyIsoCode, Family, Name, ProductCode FROM Product2",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT createable_true, updateable_true, Id FROM Opportunity",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT createable_true, updateable_true FROM Pricebook2",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT createable_true, updateable_true, Pricebook2Id, Product2Id FROM PricebookEntry",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT CurrencyIsoCode, Description, Discount, Id, ListPrice, Name, OpportunityId, Product2Id, ProductCode, Quantity, ServiceDate, SortOrder, Subtotal, UnitPrice FROM OpportunityLineItem",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT createable_true, updateable_true, AccountId, ContactId FROM Asset",
+			"operation": "Upsert",
+			"externalId": "Name",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT createable_true, updateable_true, WhoId, WhatId FROM Event",
+			"operation": "Upsert",
+			"externalId": "OwnerId;StartDateTime;EndDateTime",
+			"createTargetCSVFiles": "true"
+		},
+		{
+			"query": "SELECT createable_true, updateable_true, WhoId, WhatId FROM Task",
+			"operation": "Upsert",
+			"externalId": "OwnerId;Subject",
+			"createTargetCSVFiles": "true"
+		}
+	]
+}
