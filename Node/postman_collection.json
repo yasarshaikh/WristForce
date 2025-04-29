@@ -1,0 +1,93 @@
+{
+  "info": {
+    "name": "SF Agentforce Node API",
+    "description": "Postman collection for SF Agentforce Node API endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Send Data",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "x-api-key", "value": "{{API_KEY}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"data\": {\n    \"objectType\": \"Contact\",\n    \"operation\": \"create\",\n    \"fields\": {\n      \"FirstName\": \"John\",\n      \"LastName\": \"Doe\",\n      \"Email\": \"john.doe@example.com\"\n    }\n  }\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/send-data",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "send-data"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Start Conversation",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "x-api-key", "value": "{{API_KEY}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/conversation/start",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "conversation", "start"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Send Message",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "x-api-key", "value": "{{API_KEY}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sessionId\": \"SESSION_ID\",\n  \"message\": \"Hello, can you show my leads?\",\n  \"sequenceId\": 1\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/conversation/message",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "conversation", "message"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "End Conversation",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "x-api-key", "value": "{{API_KEY}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sessionId\": \"SESSION_ID\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/conversation/end",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "conversation", "end"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://ec2-51-20-34-90.eu-north-1.compute.amazonaws.com/" },
+    { "key": "API_KEY", "value": "" }
+  ]
+}

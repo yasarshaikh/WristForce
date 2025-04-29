@@ -1,0 +1,413 @@
+2025-04-14T05:18:25.592Z error: Error: /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/index.ejs:1
+ >> 1| <%- include('layout', { title: title }) %>
+    2| 
+    3| <div class="jumbotron">
+    4|   <h1 class="display-4">Welcome to Salesforce & Agentforce Integration</h1>
+
+/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/layout.ejs:34
+    32| 
+    33|   <div class="container">
+ >> 34|     <%- body %>
+    35|   </div>
+    36| 
+    37|   <footer class="mt-5 py-3 bg-light text-center">
+
+body is not defined
+2025-04-14T05:18:25.592Z error: ReferenceError: /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/index.ejs:1
+ >> 1| <%- include('layout', { title: title }) %>
+    2| 
+    3| <div class="jumbotron">
+    4|   <h1 class="display-4">Welcome to Salesforce & Agentforce Integration</h1>
+
+/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/layout.ejs:34
+    32| 
+    33|   <div class="container">
+ >> 34|     <%- body %>
+    35|   </div>
+    36| 
+    37|   <footer class="mt-5 py-3 bg-light text-center">
+
+body is not defined
+    at eval (eval at compile (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:15:17)
+    at layout (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:703:17)
+    at include (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:701:39)
+    at eval (eval at compile (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:10:17)
+    at index (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/application.js:609:3)
+2025-04-14T05:21:31.410Z error: Error: /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/data-form.ejs:1
+ >> 1| <%- include('layout', { title: title }) %>
+    2| 
+    3| <div class="row">
+    4|   <div class="col-md-6">
+
+/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/layout.ejs:9
+    7|   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    8|   <link rel="stylesheet" href="/css/styles.css">
+ >> 9|   <%- defineContent('scripts') %>
+    10| </head>
+    11| <body>
+    12|   <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+defineContent is not defined
+2025-04-14T05:21:31.410Z error: ReferenceError: /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/data-form.ejs:1
+ >> 1| <%- include('layout', { title: title }) %>
+    2| 
+    3| <div class="row">
+    4|   <div class="col-md-6">
+
+/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/layout.ejs:9
+    7|   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    8|   <link rel="stylesheet" href="/css/styles.css">
+ >> 9|   <%- defineContent('scripts') %>
+    10| </head>
+    11| <body>
+    12|   <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+defineContent is not defined
+    at eval (eval at compile (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:15:7)
+    at layout (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:703:17)
+    at include (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:701:39)
+    at eval (eval at compile (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:10:17)
+    at data-form (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/application.js:609:3)
+2025-04-14T06:09:15.246Z error: Error starting session: Request failed with status code 404
+2025-04-14T06:09:15.246Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T06:09:15.247Z error: Error: Request failed with status code 404
+2025-04-14T06:09:15.247Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:30:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T06:57:30.552Z error: Error starting session: Request failed with status code 404
+2025-04-14T06:57:30.553Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T06:57:30.553Z error: Error: Request failed with status code 404
+2025-04-14T06:57:30.553Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:30:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T07:05:46.315Z error: Error starting session: Request failed with status code 404
+2025-04-14T07:05:46.315Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T07:05:46.315Z error: Error: Request failed with status code 404
+2025-04-14T07:05:46.315Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:30:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T08:11:31.264Z error: Error getting OAuth token: Request failed with status code 400
+2025-04-14T08:11:31.265Z error: Error starting session: Request failed with status code 400
+2025-04-14T08:11:31.265Z error: Error starting conversation: Request failed with status code 400
+2025-04-14T08:11:31.266Z error: Error: Request failed with status code 400
+2025-04-14T08:11:31.266Z error: AxiosError: Request failed with status code 400
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.getOAuthToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:18:24)
+    at async AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:44:7)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:59:23)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T08:17:39.752Z error: Error getting OAuth token: Request failed with status code 400
+2025-04-14T08:17:39.753Z error: Error starting session: Request failed with status code 400
+2025-04-14T08:17:39.753Z error: Error starting conversation: Request failed with status code 400
+2025-04-14T08:17:39.754Z error: Error: Request failed with status code 400
+2025-04-14T08:17:39.754Z error: AxiosError: Request failed with status code 400
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.getOAuthToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:18:24)
+    at async AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:44:7)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:59:23)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T08:22:44.497Z error: Salesforce authentication error: authentication failure
+2025-04-14T08:22:44.497Z error: Error starting session: authentication failure
+2025-04-14T08:22:44.498Z error: Error starting conversation: authentication failure
+2025-04-14T08:22:44.498Z error: Error: authentication failure
+2025-04-14T08:22:44.498Z error: invalid_grant: authentication failure
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/jsforce/lib/oauth2.js:198:19
+    at tryCallOne (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:37:12)
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-04-14T08:25:01.545Z error: Salesforce authentication error: authentication failure
+2025-04-14T08:25:01.546Z error: Error starting session: authentication failure
+2025-04-14T08:25:01.546Z error: Error starting conversation: authentication failure
+2025-04-14T08:25:01.547Z error: Error: authentication failure
+2025-04-14T08:25:01.547Z error: invalid_grant: authentication failure
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/jsforce/lib/oauth2.js:198:19
+    at tryCallOne (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:37:12)
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-04-14T11:35:08.251Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:35:08.252Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:35:08.252Z error: Error: Request failed with status code 404
+2025-04-14T11:35:08.252Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:43:40.331Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:43:40.332Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:43:40.332Z error: Error: Request failed with status code 404
+2025-04-14T11:43:40.332Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:43:46.327Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:43:46.328Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:43:46.328Z error: Error: Request failed with status code 404
+2025-04-14T11:43:46.328Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:45:51.239Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:45:51.239Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:45:51.239Z error: Error: Request failed with status code 404
+2025-04-14T11:45:51.239Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:46:38.771Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:46:38.771Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:46:38.771Z error: Error: Request failed with status code 404
+2025-04-14T11:46:38.771Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:49:04.205Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:49:04.206Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:49:04.206Z error: Error: Request failed with status code 404
+2025-04-14T11:49:04.206Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:49:40.809Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:49:40.809Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:49:40.809Z error: Error: Request failed with status code 404
+2025-04-14T11:49:40.809Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:49:53.726Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:49:53.727Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:49:53.727Z error: Error: Request failed with status code 404
+2025-04-14T11:49:53.727Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:34:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:50:16.860Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:50:16.860Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:50:16.861Z error: Error: Request failed with status code 404
+2025-04-14T11:50:16.861Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:34:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:51:10.317Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:51:10.318Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:51:10.318Z error: Error: Request failed with status code 404
+2025-04-14T11:51:10.318Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:35:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:51:35.890Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:51:35.891Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:51:35.891Z error: Error: Request failed with status code 404
+2025-04-14T11:51:35.891Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:35:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:58:35.718Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:58:35.719Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:58:35.719Z error: Error: Request failed with status code 404
+2025-04-14T11:58:35.719Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:35:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T12:02:26.055Z error: Error starting session: Request failed with status code 404
+2025-04-14T12:02:26.055Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T12:02:26.055Z error: Error: Request failed with status code 404
+2025-04-14T12:02:26.055Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:35:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T12:45:48.720Z error: Salesforce authentication error: conn is not defined
+2025-04-14T12:45:48.721Z error: Full error:
+2025-04-14T12:45:48.721Z error: Error starting session: conn is not defined
+2025-04-14T12:45:48.721Z error: Error starting conversation: conn is not defined
+2025-04-14T12:45:48.721Z error: Error: conn is not defined
+2025-04-14T12:45:48.721Z error: ReferenceError: conn is not defined
+    at SalesforceService.authenticate (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:60:7)
+    at SalesforceService.getAccessToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:95:16)
+    at AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:17:54)
+    at AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:31:34)
+    at exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:49)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+    at apiAuth (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/middleware/auth.js:18:12)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+2025-04-14T12:45:50.501Z error: Salesforce authentication error: conn is not defined
+2025-04-14T12:45:50.501Z error: Full error:
+2025-04-14T12:45:50.501Z error: Error starting session: conn is not defined
+2025-04-14T12:45:50.501Z error: Error starting conversation: conn is not defined
+2025-04-14T12:45:50.501Z error: Error: conn is not defined
+2025-04-14T12:45:50.501Z error: ReferenceError: conn is not defined
+    at SalesforceService.authenticate (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:60:7)
+    at SalesforceService.getAccessToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:95:16)
+    at AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:17:54)
+    at AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:31:34)
+    at exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:49)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+    at apiAuth (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/middleware/auth.js:18:12)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+2025-04-14T12:46:14.226Z error: Salesforce authentication error: conn is not defined
+2025-04-14T12:46:14.226Z error: Full error:
+2025-04-14T12:46:14.227Z error: Error starting session: conn is not defined
+2025-04-14T12:46:14.227Z error: Error starting conversation: conn is not defined
+2025-04-14T12:46:14.227Z error: Error: conn is not defined
+2025-04-14T12:46:14.227Z error: ReferenceError: conn is not defined
+    at SalesforceService.authenticate (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:59:7)
+    at SalesforceService.getAccessToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:94:16)
+    at AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:17:54)
+    at AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:31:34)
+    at exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:49)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+    at apiAuth (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/middleware/auth.js:18:12)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+2025-04-14T12:46:41.903Z error: Salesforce authentication error: redirect_uri must match configuration
+2025-04-14T12:46:41.904Z error: Full error:
+2025-04-14T12:46:41.904Z error: Error starting session: redirect_uri must match configuration
+2025-04-14T12:46:41.904Z error: Error starting conversation: redirect_uri must match configuration
+2025-04-14T12:46:41.904Z error: Error: redirect_uri must match configuration
+2025-04-14T12:46:41.904Z error: redirect_uri_mismatch: redirect_uri must match configuration
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/jsforce/lib/oauth2.js:198:19
+    at tryCallOne (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:37:12)
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-04-15T17:34:07.114Z error: Error sending message: Request failed with status code 400
+2025-04-15T17:34:07.115Z error: Agentforce error response:
+2025-04-15T17:34:07.115Z error: Error sending message: Request failed with status code 400
+2025-04-15T17:34:07.116Z error: Error: Request failed with status code 400
+2025-04-15T17:34:07.116Z error: AxiosError: Request failed with status code 400
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.sendMessage (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:85:24)
+    at async exports.sendMessage (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:73:22)

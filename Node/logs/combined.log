@@ -1,0 +1,633 @@
+2025-04-14T05:18:17.809Z info: Server running on port 3000
+2025-04-14T05:18:25.592Z error: Error: /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/index.ejs:1
+ >> 1| <%- include('layout', { title: title }) %>
+    2| 
+    3| <div class="jumbotron">
+    4|   <h1 class="display-4">Welcome to Salesforce & Agentforce Integration</h1>
+
+/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/layout.ejs:34
+    32| 
+    33|   <div class="container">
+ >> 34|     <%- body %>
+    35|   </div>
+    36| 
+    37|   <footer class="mt-5 py-3 bg-light text-center">
+
+body is not defined
+2025-04-14T05:18:25.592Z error: ReferenceError: /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/index.ejs:1
+ >> 1| <%- include('layout', { title: title }) %>
+    2| 
+    3| <div class="jumbotron">
+    4|   <h1 class="display-4">Welcome to Salesforce & Agentforce Integration</h1>
+
+/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/layout.ejs:34
+    32| 
+    33|   <div class="container">
+ >> 34|     <%- body %>
+    35|   </div>
+    36| 
+    37|   <footer class="mt-5 py-3 bg-light text-center">
+
+body is not defined
+    at eval (eval at compile (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:15:17)
+    at layout (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:703:17)
+    at include (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:701:39)
+    at eval (eval at compile (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:10:17)
+    at index (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/application.js:609:3)
+2025-04-14T05:20:59.403Z info: Server running on port 3000
+2025-04-14T05:21:31.410Z error: Error: /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/data-form.ejs:1
+ >> 1| <%- include('layout', { title: title }) %>
+    2| 
+    3| <div class="row">
+    4|   <div class="col-md-6">
+
+/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/layout.ejs:9
+    7|   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    8|   <link rel="stylesheet" href="/css/styles.css">
+ >> 9|   <%- defineContent('scripts') %>
+    10| </head>
+    11| <body>
+    12|   <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+defineContent is not defined
+2025-04-14T05:21:31.410Z error: ReferenceError: /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/data-form.ejs:1
+ >> 1| <%- include('layout', { title: title }) %>
+    2| 
+    3| <div class="row">
+    4|   <div class="col-md-6">
+
+/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/views/layout.ejs:9
+    7|   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    8|   <link rel="stylesheet" href="/css/styles.css">
+ >> 9|   <%- defineContent('scripts') %>
+    10| </head>
+    11| <body>
+    12|   <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+defineContent is not defined
+    at eval (eval at compile (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:15:7)
+    at layout (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:703:17)
+    at include (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:701:39)
+    at eval (eval at compile (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:673:12), <anonymous>:10:17)
+    at data-form (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:274:36)
+    at exports.renderFile [as engine] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/application.js:657:10)
+    at Function.render (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/application.js:609:3)
+2025-04-14T05:28:54.722Z info: Server running on port 3000
+2025-04-14T06:08:56.098Z info: Server running on port 3000
+2025-04-14T06:09:15.246Z error: Error starting session: Request failed with status code 404
+2025-04-14T06:09:15.246Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T06:09:15.247Z error: Error: Request failed with status code 404
+2025-04-14T06:09:15.247Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:30:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T06:57:30.552Z error: Error starting session: Request failed with status code 404
+2025-04-14T06:57:30.553Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T06:57:30.553Z error: Error: Request failed with status code 404
+2025-04-14T06:57:30.553Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:30:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T07:05:46.315Z error: Error starting session: Request failed with status code 404
+2025-04-14T07:05:46.315Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T07:05:46.315Z error: Error: Request failed with status code 404
+2025-04-14T07:05:46.315Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:30:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T08:11:22.094Z info: Server running on port 3000
+2025-04-14T08:11:31.264Z error: Error getting OAuth token: Request failed with status code 400
+2025-04-14T08:11:31.265Z error: Error starting session: Request failed with status code 400
+2025-04-14T08:11:31.265Z error: Error starting conversation: Request failed with status code 400
+2025-04-14T08:11:31.266Z error: Error: Request failed with status code 400
+2025-04-14T08:11:31.266Z error: AxiosError: Request failed with status code 400
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.getOAuthToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:18:24)
+    at async AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:44:7)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:59:23)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T08:17:26.790Z info: Server running on port 3000
+2025-04-14T08:17:39.752Z error: Error getting OAuth token: Request failed with status code 400
+2025-04-14T08:17:39.753Z error: Error starting session: Request failed with status code 400
+2025-04-14T08:17:39.753Z error: Error starting conversation: Request failed with status code 400
+2025-04-14T08:17:39.754Z error: Error: Request failed with status code 400
+2025-04-14T08:17:39.754Z error: AxiosError: Request failed with status code 400
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.getOAuthToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:18:24)
+    at async AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:44:7)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:59:23)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T08:22:35.719Z info: Server running on port 3000
+2025-04-14T08:22:44.497Z error: Salesforce authentication error: authentication failure
+2025-04-14T08:22:44.497Z error: Error starting session: authentication failure
+2025-04-14T08:22:44.498Z error: Error starting conversation: authentication failure
+2025-04-14T08:22:44.498Z error: Error: authentication failure
+2025-04-14T08:22:44.498Z error: invalid_grant: authentication failure
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/jsforce/lib/oauth2.js:198:19
+    at tryCallOne (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:37:12)
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-04-14T08:25:01.545Z error: Salesforce authentication error: authentication failure
+2025-04-14T08:25:01.546Z error: Error starting session: authentication failure
+2025-04-14T08:25:01.546Z error: Error starting conversation: authentication failure
+2025-04-14T08:25:01.547Z error: Error: authentication failure
+2025-04-14T08:25:01.547Z error: invalid_grant: authentication failure
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/jsforce/lib/oauth2.js:198:19
+    at tryCallOne (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:37:12)
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-04-14T08:25:15.154Z info: Server running on port 3000
+2025-04-14T11:35:00.449Z info: Server running on port 3000
+2025-04-14T11:35:06.515Z info: Checking SF credentials...
+2025-04-14T11:35:06.515Z info: Login URL: undefined
+2025-04-14T11:35:06.515Z info: Username: admin@sf.hackathon
+2025-04-14T11:35:06.515Z info: Security Token Present: false
+2025-04-14T11:35:06.515Z info: Attempting Salesforce authentication...
+2025-04-14T11:35:07.697Z info: User Info:
+2025-04-14T11:35:07.697Z info: Successfully authenticated with Salesforce. Instance URL: https://sf-virtual-hackathon-25.my.salesforce.com
+2025-04-14T11:35:07.697Z info: Organization ID: 00DHn000006jUfMMAU
+2025-04-14T11:35:07.697Z info: User ID: 005Hn00000JSQI5IAP
+2025-04-14T11:35:08.251Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:35:08.252Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:35:08.252Z error: Error: Request failed with status code 404
+2025-04-14T11:35:08.252Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:43:35.924Z info: Server running on port 3000
+2025-04-14T11:43:38.662Z info: Checking SF credentials...
+2025-04-14T11:43:38.663Z info: Login URL: undefined
+2025-04-14T11:43:38.663Z info: Username: admin@sf.hackathon
+2025-04-14T11:43:38.663Z info: Security Token Present: false
+2025-04-14T11:43:38.663Z info: Attempting Salesforce authentication...
+2025-04-14T11:43:39.996Z info: User Info:
+2025-04-14T11:43:39.996Z info: Successfully authenticated with Salesforce. Instance URL: https://sf-virtual-hackathon-25.my.salesforce.com
+2025-04-14T11:43:39.996Z info: Organization ID: 00DHn000006jUfMMAU
+2025-04-14T11:43:39.997Z info: User ID: 005Hn00000JSQI5IAP
+2025-04-14T11:43:40.331Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:43:40.332Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:43:40.332Z error: Error: Request failed with status code 404
+2025-04-14T11:43:40.332Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:43:46.113Z info: Using existing Salesforce connection
+2025-04-14T11:43:46.327Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:43:46.328Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:43:46.328Z error: Error: Request failed with status code 404
+2025-04-14T11:43:46.328Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:45:50.908Z info: Using existing Salesforce connection
+2025-04-14T11:45:51.239Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:45:51.239Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:45:51.239Z error: Error: Request failed with status code 404
+2025-04-14T11:45:51.239Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:46:38.437Z info: Using existing Salesforce connection
+2025-04-14T11:46:38.771Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:46:38.771Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:46:38.771Z error: Error: Request failed with status code 404
+2025-04-14T11:46:38.771Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:49:03.844Z info: Using existing Salesforce connection
+2025-04-14T11:49:04.205Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:49:04.206Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:49:04.206Z error: Error: Request failed with status code 404
+2025-04-14T11:49:04.206Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:49:40.402Z info: Using existing Salesforce connection
+2025-04-14T11:49:40.809Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:49:40.809Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:49:40.809Z error: Error: Request failed with status code 404
+2025-04-14T11:49:40.809Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:33:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:49:46.676Z info: Server running on port 3000
+2025-04-14T11:49:52.333Z info: Checking SF credentials...
+2025-04-14T11:49:52.333Z info: Login URL: undefined
+2025-04-14T11:49:52.334Z info: Username: admin@sf.hackathon
+2025-04-14T11:49:52.334Z info: Security Token Present: false
+2025-04-14T11:49:52.334Z info: Attempting Salesforce authentication...
+2025-04-14T11:49:53.450Z info: User Info:
+2025-04-14T11:49:53.451Z info: Successfully authenticated with Salesforce. Instance URL: https://sf-virtual-hackathon-25.my.salesforce.com
+2025-04-14T11:49:53.451Z info: Organization ID: 00DHn000006jUfMMAU
+2025-04-14T11:49:53.451Z info: User ID: 005Hn00000JSQI5IAP
+2025-04-14T11:49:53.726Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:49:53.727Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:49:53.727Z error: Error: Request failed with status code 404
+2025-04-14T11:49:53.727Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:34:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:50:12.484Z info: Server running on port 3000
+2025-04-14T11:50:15.027Z info: Checking SF credentials...
+2025-04-14T11:50:15.028Z info: Login URL: undefined
+2025-04-14T11:50:15.028Z info: Username: admin@sf.hackathon
+2025-04-14T11:50:15.028Z info: Security Token Present: false
+2025-04-14T11:50:15.028Z info: Attempting Salesforce authentication...
+2025-04-14T11:50:16.138Z info: User Info:
+2025-04-14T11:50:16.139Z info: Successfully authenticated with Salesforce. Instance URL: https://sf-virtual-hackathon-25.my.salesforce.com
+2025-04-14T11:50:16.139Z info: Organization ID: 00DHn000006jUfMMAU
+2025-04-14T11:50:16.139Z info: User ID: 005Hn00000JSQI5IAP
+2025-04-14T11:50:16.860Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:50:16.860Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:50:16.861Z error: Error: Request failed with status code 404
+2025-04-14T11:50:16.861Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:34:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:51:06.236Z info: Server running on port 3000
+2025-04-14T11:51:08.748Z info: Checking SF credentials...
+2025-04-14T11:51:08.748Z info: Login URL: undefined
+2025-04-14T11:51:08.748Z info: Username: admin@sf.hackathon
+2025-04-14T11:51:08.748Z info: Security Token Present: false
+2025-04-14T11:51:08.748Z info: Attempting Salesforce authentication...
+2025-04-14T11:51:10.066Z info: User Info:
+2025-04-14T11:51:10.066Z info: Successfully authenticated with Salesforce. Instance URL: https://sf-virtual-hackathon-25.my.salesforce.com
+2025-04-14T11:51:10.066Z info: Organization ID: 00DHn000006jUfMMAU
+2025-04-14T11:51:10.067Z info: User ID: 005Hn00000JSQI5IAP
+2025-04-14T11:51:10.317Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:51:10.318Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:51:10.318Z error: Error: Request failed with status code 404
+2025-04-14T11:51:10.318Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:35:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:51:30.831Z info: Server running on port 3000
+2025-04-14T11:51:32.992Z info: Checking SF credentials...
+2025-04-14T11:51:32.992Z info: Login URL: undefined
+2025-04-14T11:51:32.992Z info: Username: admin@sf.hackathon
+2025-04-14T11:51:32.992Z info: Security Token Present: false
+2025-04-14T11:51:32.992Z info: Attempting Salesforce authentication...
+2025-04-14T11:51:34.028Z info: User Info:
+2025-04-14T11:51:34.028Z info: Successfully authenticated with Salesforce. Instance URL: https://sf-virtual-hackathon-25.my.salesforce.com
+2025-04-14T11:51:34.028Z info: Organization ID: 00DHn000006jUfMMAU
+2025-04-14T11:51:34.029Z info: User ID: 005Hn00000JSQI5IAP
+2025-04-14T11:51:35.890Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:51:35.891Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:51:35.891Z error: Error: Request failed with status code 404
+2025-04-14T11:51:35.891Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:35:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T11:58:09.301Z info: Server running on port 3000
+2025-04-14T11:58:31.295Z info: Checking SF credentials...
+2025-04-14T11:58:31.296Z info: Login URL: undefined
+2025-04-14T11:58:31.296Z info: Username: admin@sf.hackathon
+2025-04-14T11:58:31.296Z info: Security Token Present: false
+2025-04-14T11:58:31.296Z info: Attempting Salesforce authentication...
+2025-04-14T11:58:32.438Z info: User Info:
+2025-04-14T11:58:32.438Z info: Successfully authenticated with Salesforce. Instance URL: https://sf-virtual-hackathon-25.my.salesforce.com
+2025-04-14T11:58:32.438Z info: Organization ID: 00DHn000006jUfMMAU
+2025-04-14T11:58:32.438Z info: User ID: 005Hn00000JSQI5IAP
+2025-04-14T11:58:35.718Z error: Error starting session: Request failed with status code 404
+2025-04-14T11:58:35.719Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T11:58:35.719Z error: Error: Request failed with status code 404
+2025-04-14T11:58:35.719Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:35:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T12:02:17.168Z info: Server running on port 3000
+2025-04-14T12:02:22.405Z info: Checking SF credentials...
+2025-04-14T12:02:22.405Z info: Login URL: undefined
+2025-04-14T12:02:22.405Z info: Username: admin@sf.hackathon
+2025-04-14T12:02:22.405Z info: Security Token Present: false
+2025-04-14T12:02:22.405Z info: Attempting Salesforce authentication...
+2025-04-14T12:02:23.763Z info: User Info:
+2025-04-14T12:02:23.764Z info: Successfully authenticated with Salesforce. Instance URL: https://sf-virtual-hackathon-25.my.salesforce.com
+2025-04-14T12:02:23.764Z info: Organization ID: 00DHn000006jUfMMAU
+2025-04-14T12:02:23.764Z info: User ID: 005Hn00000JSQI5IAP
+2025-04-14T12:02:26.055Z error: Error starting session: Request failed with status code 404
+2025-04-14T12:02:26.055Z error: Error starting conversation: Request failed with status code 404
+2025-04-14T12:02:26.055Z error: Error: Request failed with status code 404
+2025-04-14T12:02:26.055Z error: AxiosError: Request failed with status code 404
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:35:24)
+    at async exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:25)
+2025-04-14T12:45:38.187Z info: Server running on port 3000
+2025-04-14T12:45:48.720Z info: Checking SF credentials...
+2025-04-14T12:45:48.720Z info: Login URL: undefined
+2025-04-14T12:45:48.720Z info: Username: admin@sf.hackathon
+2025-04-14T12:45:48.720Z info: Security Token Present: false
+2025-04-14T12:45:48.720Z info: Attempting Salesforce authentication...
+2025-04-14T12:45:48.720Z error: Salesforce authentication error: conn is not defined
+2025-04-14T12:45:48.721Z error: Full error:
+2025-04-14T12:45:48.721Z error: Error starting session: conn is not defined
+2025-04-14T12:45:48.721Z error: Error starting conversation: conn is not defined
+2025-04-14T12:45:48.721Z error: Error: conn is not defined
+2025-04-14T12:45:48.721Z error: ReferenceError: conn is not defined
+    at SalesforceService.authenticate (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:60:7)
+    at SalesforceService.getAccessToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:95:16)
+    at AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:17:54)
+    at AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:31:34)
+    at exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:49)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+    at apiAuth (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/middleware/auth.js:18:12)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+2025-04-14T12:45:50.500Z info: Checking SF credentials...
+2025-04-14T12:45:50.500Z info: Login URL: undefined
+2025-04-14T12:45:50.501Z info: Username: admin@sf.hackathon
+2025-04-14T12:45:50.501Z info: Security Token Present: false
+2025-04-14T12:45:50.501Z info: Attempting Salesforce authentication...
+2025-04-14T12:45:50.501Z error: Salesforce authentication error: conn is not defined
+2025-04-14T12:45:50.501Z error: Full error:
+2025-04-14T12:45:50.501Z error: Error starting session: conn is not defined
+2025-04-14T12:45:50.501Z error: Error starting conversation: conn is not defined
+2025-04-14T12:45:50.501Z error: Error: conn is not defined
+2025-04-14T12:45:50.501Z error: ReferenceError: conn is not defined
+    at SalesforceService.authenticate (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:60:7)
+    at SalesforceService.getAccessToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:95:16)
+    at AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:17:54)
+    at AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:31:34)
+    at exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:49)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+    at apiAuth (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/middleware/auth.js:18:12)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+2025-04-14T12:46:11.639Z info: Server running on port 3000
+2025-04-14T12:46:14.224Z info: Checking SF credentials...
+2025-04-14T12:46:14.225Z info: Login URL: undefined
+2025-04-14T12:46:14.225Z info: Username: admin@sf.hackathon
+2025-04-14T12:46:14.225Z info: Security Token Present: false
+2025-04-14T12:46:14.225Z info: Attempting Salesforce authentication...
+2025-04-14T12:46:14.226Z error: Salesforce authentication error: conn is not defined
+2025-04-14T12:46:14.226Z error: Full error:
+2025-04-14T12:46:14.227Z error: Error starting session: conn is not defined
+2025-04-14T12:46:14.227Z error: Error starting conversation: conn is not defined
+2025-04-14T12:46:14.227Z error: Error: conn is not defined
+2025-04-14T12:46:14.227Z error: ReferenceError: conn is not defined
+    at SalesforceService.authenticate (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:59:7)
+    at SalesforceService.getAccessToken (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/salesforceService.js:94:16)
+    at AgentforceService.getHeaders (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:17:54)
+    at AgentforceService.startSession (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:31:34)
+    at exports.startConversation (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:49:49)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+    at apiAuth (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/middleware/auth.js:18:12)
+    at Layer.handle [as handle_request] (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/express/lib/router/route.js:149:13)
+2025-04-14T12:46:37.844Z info: Server running on port 3000
+2025-04-14T12:46:40.695Z info: Checking SF credentials...
+2025-04-14T12:46:40.695Z info: Login URL: undefined
+2025-04-14T12:46:40.696Z info: Username: admin@sf.hackathon
+2025-04-14T12:46:40.696Z info: Security Token Present: false
+2025-04-14T12:46:40.696Z info: Attempting Salesforce authentication...
+2025-04-14T12:46:41.903Z error: Salesforce authentication error: redirect_uri must match configuration
+2025-04-14T12:46:41.904Z error: Full error:
+2025-04-14T12:46:41.904Z error: Error starting session: redirect_uri must match configuration
+2025-04-14T12:46:41.904Z error: Error starting conversation: redirect_uri must match configuration
+2025-04-14T12:46:41.904Z error: Error: redirect_uri must match configuration
+2025-04-14T12:46:41.904Z error: redirect_uri_mismatch: redirect_uri must match configuration
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/jsforce/lib/oauth2.js:198:19
+    at tryCallOne (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:37:12)
+    at /Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/promise/lib/core.js:123:15
+    at flush (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/asap/raw.js:50:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-04-15T17:33:54.424Z info: Server running on port 3000
+2025-04-15T17:34:00.844Z info: Authenticating with Salesforce using client_credentials...
+2025-04-15T17:34:02.667Z info: Salesforce authentication successful
+2025-04-15T17:34:04.041Z info: Started new session for user user-1744738440834: cd984f07-0fa9-4be6-b7b3-9cfa9963ef8d
+2025-04-15T17:34:04.042Z info: Started conversation for user user-1744738440834
+2025-04-15T17:34:06.430Z info: Using cached Salesforce access token
+2025-04-15T17:34:07.114Z error: Error sending message: Request failed with status code 400
+2025-04-15T17:34:07.115Z error: Agentforce error response:
+2025-04-15T17:34:07.115Z error: Error sending message: Request failed with status code 400
+2025-04-15T17:34:07.116Z error: Error: Request failed with status code 400
+2025-04-15T17:34:07.116Z error: AxiosError: Request failed with status code 400
+    at settle (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:2031:12)
+    at IncomingMessage.handleStreamEnd (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:3148:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/node_modules/axios/dist/node/axios.cjs:4258:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AgentforceService.sendMessage (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/services/agentforceService.js:85:24)
+    at async exports.sendMessage (/Users/yasarshaikh/Documents/Hackathons/SF Virtual Hackathon/Node/controllers/apiController.js:73:22)
+2025-04-15T17:47:35.691Z info: Server running on port 3000
+2025-04-15T17:47:40.764Z info: Authenticating with Salesforce using client_credentials...
+2025-04-15T17:47:41.795Z info: Salesforce authentication successful
+2025-04-15T17:47:43.071Z info: Started new session for user user-1744739260753: 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:47:43.072Z info: Started conversation for user user-1744739260753
+2025-04-15T17:47:46.338Z info: Using cached Salesforce access token
+2025-04-15T17:47:56.103Z info: Sent message (seq 1) in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:47:56.104Z info: Message sent in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:48:10.360Z info: Using cached Salesforce access token
+2025-04-15T17:48:22.428Z info: Sent message (seq 2) in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:48:22.428Z info: Message sent in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:48:45.374Z info: Using cached Salesforce access token
+2025-04-15T17:48:55.135Z info: Sent message (seq 3) in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:48:55.136Z info: Message sent in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:49:20.149Z info: Using cached Salesforce access token
+2025-04-15T17:49:24.828Z info: Sent message (seq 4) in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:49:24.829Z info: Message sent in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:49:42.396Z info: Using cached Salesforce access token
+2025-04-15T17:49:49.164Z info: Sent message (seq 5) in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:49:49.165Z info: Message sent in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:50:02.900Z info: Using cached Salesforce access token
+2025-04-15T17:50:10.259Z info: Sent message (seq 6) in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:50:10.259Z info: Message sent in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:50:28.008Z info: Using cached Salesforce access token
+2025-04-15T17:50:36.213Z info: Sent message (seq 7) in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:50:36.213Z info: Message sent in session 29031ddb-ddb3-40f0-8e37-637e009b201b
+2025-04-15T17:58:35.099Z info: Server running on port 3000
+2025-04-15T17:58:45.130Z info: Authenticating with Salesforce using client_credentials...
+2025-04-15T17:58:46.405Z info: Salesforce authentication successful
+2025-04-15T17:58:48.220Z info: Started new session for user user-1744739925120: d125d9d5-b96d-429d-a16f-9a3f167c6d90
+2025-04-15T17:58:48.220Z info: Started conversation for user user-1744739925120
+2025-04-15T17:58:53.980Z info: Using cached Salesforce access token
+2025-04-15T17:59:08.989Z info: Sent message (seq 1) in session d125d9d5-b96d-429d-a16f-9a3f167c6d90
+2025-04-15T17:59:08.990Z info: Message sent in session d125d9d5-b96d-429d-a16f-9a3f167c6d90
+2025-04-15T17:59:14.244Z info: Using cached Salesforce access token
+2025-04-15T17:59:15.115Z info: Ended session d125d9d5-b96d-429d-a16f-9a3f167c6d90
+2025-04-15T17:59:15.115Z info: Ended conversation session d125d9d5-b96d-429d-a16f-9a3f167c6d90
+2025-04-15T18:04:35.659Z info: Server running on port 3000
+2025-04-15T18:04:54.370Z info: Authenticating with Salesforce using client_credentials...
+2025-04-15T18:04:56.223Z info: Salesforce authentication successful
+2025-04-15T18:04:57.871Z info: Started new session for user user-1744740294360: 27df5979-d5ab-4c81-bc6f-e61a9fadccaa
+2025-04-15T18:04:57.871Z info: Started conversation for user user-1744740294360
+2025-04-15T18:09:26.715Z info: Server running on port 3000
+2025-04-15T18:09:34.131Z info: Authenticating with Salesforce using client_credentials...
+2025-04-15T18:09:35.663Z info: Salesforce authentication successful
+2025-04-15T18:09:37.112Z info: Started new session for user user-1744740574119: 3243f3a3-8c8f-4709-9e4b-54a4d8bef02b
+2025-04-15T18:09:37.113Z info: Started conversation for user user-1744740574119
+2025-04-15T18:10:49.309Z info: Server running on port 3000
+2025-04-15T18:11:56.280Z info: Server running on port 3000
+2025-04-15T18:11:58.947Z info: Authenticating with Salesforce using client_credentials...
+2025-04-15T18:12:00.109Z info: Salesforce authentication successful
+2025-04-15T18:12:02.210Z info: Started new session for user user-1744740718927: 73d6ba24-9dea-4230-bd6f-b56c43f44e94
+2025-04-15T18:12:02.210Z info: Started conversation for user user-1744740718927
+2025-04-15T18:12:06.328Z info: Using cached Salesforce access token
+2025-04-15T18:12:07.496Z info: Started new session for user user-1744740726324: 80d3d586-14df-4ee6-83de-7c0b1dab1f93
+2025-04-15T18:12:07.497Z info: Started conversation for user user-1744740726324
+2025-04-15T18:13:05.756Z info: Using cached Salesforce access token
+2025-04-15T18:13:07.282Z info: Started new session for user user-1744740781130: f8ba18c4-e8e3-44b4-bc3a-b261deb2f540
+2025-04-15T18:13:07.282Z info: Started conversation for user user-1744740781130
+2025-04-15T18:15:36.489Z info: Using cached Salesforce access token
+2025-04-15T18:15:40.348Z info: Sent message (seq 1) in session f8ba18c4-e8e3-44b4-bc3a-b261deb2f540
+2025-04-15T18:15:40.348Z info: Message sent in session f8ba18c4-e8e3-44b4-bc3a-b261deb2f540
+2025-04-15T18:16:25.188Z info: Server running on port 3000
+2025-04-15T18:16:37.791Z info: Authenticating with Salesforce using client_credentials...
+2025-04-15T18:16:40.072Z info: Salesforce authentication successful
+2025-04-15T18:16:41.570Z info: Started new session for user user-1744740989763: bce99c52-882c-4521-9a4e-94c68fcf27d3
+2025-04-15T18:16:41.570Z info: Started conversation for user user-1744740989763
+2025-04-15T18:19:04.957Z info: Server running on port 3000
+2025-04-15T18:19:09.863Z info: Authenticating with Salesforce using client_credentials...
+2025-04-15T18:19:10.824Z info: Salesforce authentication successful
+2025-04-15T18:19:13.645Z info: Started new session for user user-1744741148117: 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:19:13.646Z info: Started conversation for user user-1744741148117
+2025-04-15T18:19:26.979Z info: Using cached Salesforce access token
+2025-04-15T18:19:30.498Z info: Sent message (seq 1) in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:19:30.498Z info: Message sent in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:19:35.913Z info: Using cached Salesforce access token
+2025-04-15T18:19:45.509Z info: Sent message (seq 2) in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:19:45.510Z info: Message sent in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:19:55.836Z info: Using cached Salesforce access token
+2025-04-15T18:20:03.548Z info: Sent message (seq 3) in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:20:03.551Z info: Message sent in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:20:44.482Z info: Using cached Salesforce access token
+2025-04-15T18:20:51.530Z info: Sent message (seq 4) in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:20:51.531Z info: Message sent in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:21:04.295Z info: Using cached Salesforce access token
+2025-04-15T18:21:15.609Z info: Sent message (seq 5) in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:21:15.609Z info: Message sent in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:21:35.237Z info: Using cached Salesforce access token
+2025-04-15T18:21:41.668Z info: Sent message (seq 6) in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:21:41.669Z info: Message sent in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:21:52.277Z info: Using cached Salesforce access token
+2025-04-15T18:22:09.043Z info: Sent message (seq 7) in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-15T18:22:09.044Z info: Message sent in session 0ac0b772-54ff-4b11-9c08-d12f1088d94b
+2025-04-29T13:39:47.052Z info: Server running on port 3000
+2025-04-29T13:39:52.531Z info: Authenticating with Salesforce using client_credentials...
+2025-04-29T13:39:54.851Z info: Salesforce authentication successful
+2025-04-29T13:39:56.611Z info: Started new session for user user-1745933992516: 14595e63-5ace-410e-90d2-62f2ed2b208a
+2025-04-29T13:39:56.611Z info: Started conversation for user user-1745933992516
