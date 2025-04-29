@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933808487754",
+    "project_id": "testappwear-197d2",
+    "storage_bucket": "testappwear-197d2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933808487754:android:ec3f0f44d780f57a7095b3",
+        "android_client_info": {
+          "package_name": "com.epam.testappwear"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbdg0C3BgglhRxbqd2lga1wKZy6aMWE5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
