@@ -143,13 +143,13 @@ private fun HomeScreen(
                 onClick = onApprovalsClick,
                 iconSize = 38.dp
             )
-            ActionButton(
-                iconRes = R.drawable.slack,
-                label = "Slack",
-                buttonColors = ButtonDefaults.iconButtonColors(),
-                onClick = { /* Dummy */ },
-                iconSize = 38.dp
-            )
+//            ActionButton(
+//                iconRes = R.drawable.slack,
+//                label = "Slack",
+//                buttonColors = ButtonDefaults.iconButtonColors(),
+//                onClick = { /* Dummy */ },
+//                iconSize = 38.dp
+//            )
         }
         Spacer(modifier = Modifier.height(4.dp))
     }
@@ -279,7 +279,7 @@ fun ApprovalCard(approval: String) {
             color = Color.White,
             fontSize = 12.sp,
             fontWeight = FontWeight.Medium,
-            maxLines = 1,
+            maxLines = 2,
             overflow = TextOverflow.Ellipsis,
             modifier = Modifier.padding(bottom = 4.dp)
         )
