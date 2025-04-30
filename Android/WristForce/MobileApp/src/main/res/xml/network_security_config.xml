@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow HTTP traffic to a specific domain -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">ec2-51-20-34-90.eu-north-1.compute.amazonaws.com</domain>
+    </domain-config>
+</network-security-config>
