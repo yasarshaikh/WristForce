@@ -1,18 +1,39 @@
-# Salesforce DX Project: Next Steps
+# WristForce - Salesforce CRM & Agentforce Metadata
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Overview
+WristForce repository stores core metadata for the Salesforce CRM and Agentforce applications. It includes configurations, custom objects, and Apex classes essential for the functionality of these applications. While some agent-related metadata is not stored here, the repository contains related Apex classes and flows used by Agentforce.
 
-## How Do You Plan to Deploy Your Changes?
+## Agentforce Agent Features
+- **Meeting Insights**:
+    - Example: "I have a meeting with Acme, need to provide a summary for them."
+- **Slack Communication**:
+    - Example: "I need the latest case details from the channel. Kate, please provide more details ASAP."
+    - Response: "Posted on Slack channel #sales-experts for Kate."
+- **Meeting Notes**:
+    - Example:
+        1. "I had a meeting with John. It was an excellent meeting. He is excited for our demo on 10th April."
+        2. "I need to send quotes by 9th April (Task for contact or Lead)."
+- **Meeting Reminders**: Push notifications for upcoming meetings.
+- **Slack Notifications**: Push notifications for Slack updates.
+- **Meeting List**:
+    - Example Queries:
+        - "Do I have any meetings tomorrow?"
+        - "List all my meetings for a week."
+        - "Have I had any meetings with Maria last week?"
+- **Approval List**:
+    - Example Queries:
+        - "Show opportunities waiting for my approval."
+        - "Prioritize on Amount."
+        - "What latest opportunity have I approved?"
+    - Push notifications for approval lists.
+- **Meeting Coach**:
+    - Example Queries:
+        - "Do I have any meetings tomorrow?"
+        - "Help me be prepared for this meeting."
+        - "What should I know and prepare for the closest meeting?"
+        - "What should I know for the next meeting with Bree?"
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Prerequisites
+- Salesforce Org with Agentforce enabled
+- Installed Salesforce CLI
+- Node.js and npm (for additional tools or scripts)
