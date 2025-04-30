@@ -56,7 +56,7 @@ class VoiceViewModel(private val context: Context) : ViewModel(), DataClient.OnD
         // Fetch session ID from the backend
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val userId = "12345"
+                val userId = "user1234"
                 val response = RetrofitClient.api.startConversation(Conversation(userId))
                 if (response.isSuccessful) {
                     sessionId = response.body()?.sessionId
@@ -133,7 +133,7 @@ class VoiceViewModel(private val context: Context) : ViewModel(), DataClient.OnD
 
 
     private fun meetingsToday() {
-        val predefinedMessage = "What are meetings present today?" // Request message
+        val predefinedMessage = "What are my meetings planned?" // Request message
 
         viewModelScope.launch(Dispatchers.IO) {
             try {
@@ -151,8 +151,11 @@ class VoiceViewModel(private val context: Context) : ViewModel(), DataClient.OnD
                     val reply = backendMessages?.firstOrNull()?.message
 
                     if (!reply.isNullOrEmpty()) {
+
+                        val meetings = parseMeetingsFromMessage(reply)
+                        Log.d("VoiceViewModel", "Parsed meetings: $meetings")
                         sttResult.value = reply
-                        sendMeetingsToWatch(reply) // Send reply back to watch
+                        sendMeetingsToWatch(meetings.toString()) // Send reply back to watch
                     } else {
                         sttResult.value = "No meetings found."
                         sendMeetingsToWatch("No meetings found.")
@@ -164,6 +167,30 @@ class VoiceViewModel(private val context: Context) : ViewModel(), DataClient.OnD
                 sttResult.value = "Error connecting to backend: ${e.message}"
             }
         }
+    }
+
+    private fun parseMeetingsFromMessage(message: String): List<String> {
+        val meetings = mutableListOf<String>()
+
+        // Regex patterns for extracting the title, time, and description
+        val titleRegex = """^\s*-\s*(.+)$""".toRegex(RegexOption.MULTILINE) // Matches "- Title" with optional leading spaces, multiline enabled
+        val timeRegex = """^\s*-\s*Time:\s*(.+)$""".toRegex(RegexOption.MULTILINE) // Matches "- Time"
+        val descriptionRegex = """^\s*-\s*Description:\s*(.+)$""".toRegex(RegexOption.MULTILINE) // Matches "- Description"
+
+        // Extract title
+        val titleMatch = titleRegex.find(message)?.groups?.get(1)?.value?.trim() ?: "Unknown Title"
+        // Extract time
+        val timeMatch = timeRegex.find(message)?.groups?.get(1)?.value?.trim() ?: "No Time Provided"
+        // Extract description
+        val descriptionMatch = descriptionRegex.find(message)?.groups?.get(1)?.value?.trim() ?: "No Description"
+
+        // Combine extracted details into a single formatted string
+        val formattedMeeting = "$titleMatch\nTime: $timeMatch\nDescription: $descriptionMatch"
+        meetings.add(formattedMeeting)
+
+        // Log the parsed meetings for debugging
+        Log.d("VoiceViewModel", "Parsed meetings: $meetings")
+        return meetings
     }
 
 //    private fun meetingsToday() {
@@ -314,15 +341,19 @@ class VoiceViewModel(private val context: Context) : ViewModel(), DataClient.OnD
             }
         }
     }
+
     private fun parseApprovalsFromMessage(message: String): List<String> {
-        return message.split("\n")
-            .filter { it.contains("- Title:") }
-            .map {
-                it.substringAfter("- Title:").trim()
+        val approvals = mutableListOf<String>()
+        val regex = """Title:\s*(.+)""".toRegex()  // Matches "Title:" followed by text
+
+        message.lineSequence().forEach { line ->
+            regex.find(line)?.groups?.get(1)?.value?.let { title ->
+                approvals.add(title.trim())
             }
-            .also {
-                Log.d("VoiceViewModel", "Parsed approval titles: $it")
-            }
+        }
+
+        Log.d("VoiceViewModel", "Parsed ${approvals.size} titles: $approvals")
+        return approvals
     }
 
     private fun sendApprovalsToWatch(approvals: List<String>) {
