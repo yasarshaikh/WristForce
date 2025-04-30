@@ -12,13 +12,22 @@ public without sharing class CheckAppointmentSlots {
         }
         return null;
     }
-    
-    public static List<AppointmentResponse> checkAppointmentAvailability(DateTime dateTimeToCheck, List<String> contactIds){
+   
+    public static List<AppointmentResponse> checkAppointmentAvailability(String dateTimeToCheck, List<String> contactIds){
         Boolean available = true;
+        string allstring = 'FIND\'  ' +string.join(contactIds,' OR ')+'\' RETURNING Contact, Lead';
+        DateTime meetingDateTime = Datetime.valueOf(dateTimeToCheck);
+        contactIds = new List<String>();
+        List<List<sObject>> searchList = Search.query(allstring);
+        for (List<SObject> lst : searchList) {
+            for (SObject sobj : lst) {
+                contactIds.add(String.valueOf(sobj.get('id')));
+            }
+		}
         List<EventRelation> eventRelations = [SELECT Id, Event.StartDateTime, Event.EndDateTime FROM EventRelation WHERE RelationId In:contactIds AND
-                                              DAY_ONLY(Event.StartDateTime) =:dateTimeToCheck.date()];
+                                              DAY_ONLY(Event.StartDateTime) =:meetingDateTime.date()];
         for(EventRelation eventRelation :eventRelations){
-            if((eventRelation.Event.StartDateTime.getTime() <= dateTimeToCheck.getTime() && eventRelation.Event.EndDateTime.getTime() > dateTimeToCheck.getTime())){
+            if((eventRelation.Event.StartDateTime.getTime() <= meetingDateTime.getTime() && eventRelation.Event.EndDateTime.getTime() > meetingDateTime.getTime())){
                 available = false; 
             }
         }
@@ -33,7 +42,7 @@ public without sharing class CheckAppointmentSlots {
             required=true
             description='Date for which we want to check the slots. The variable needs to be an Apex Date type with format    yyyy-MM-dd.'
         )
-        public DateTime dateTimeToCheck;
+        public String dateTimeToCheck;
         @InvocableVariable(
             required=true
             description='Contact or Lead Name that we want to Book appointment with.'
