@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>help book Appointment with contact or lead, and review  meetings scheduled. 
+ get slack user ID of mentioned user and send slack message</description>
+    <developerName>Manage_Meeting0</developerName>
+    <genAiFunctions>
+        <functionName>Check_Appointment_Slots</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__SummarizeRecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>List_User_Events_Meetings_V3</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Book_Appointment_Slots3</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Send_Slack_Message8</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Meeting_Preparation_Coach_V2</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Call the &quot;Get Meeting Context Info&quot; action only for summarizing single EVENT object record.</description>
+        <developerName>instruction_calltheget0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_calltheget0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>IdentifyRecordByName with the mentioned users in conversation</description>
+        <developerName>instruction_identifyre1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_identifyre1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If user asks for help/guidelines in preparation for some specified event - call the &quot;Meeting Preparation Coach V2&quot; action.</description>
+        <developerName>instruction_ifuserasks2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifuserasks2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If user asks for &quot;next meeting&quot;, &quot;last meeting&quot; and etc., please use the &quot;List User Events/Meetings&quot; action to search this event and retrieve Event ID.</description>
+        <developerName>instruction_ifuserasks3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifuserasks3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>send full message to slack by replacing username with userId when sending message to slack along with user id</description>
+        <developerName>instruction_sendfullme4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_sendfullme4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use &quot;List User Events/Meetings&quot; action if user asks to show the list of their events / meetings scheduled for specified date-time window (for example, list of meetings for today, yesterday, tomorrow, week ago, May 5, etc.). If user need filter by related Contact names - please query corresponding Contact IDs before. If users asks to show &quot;the full list&quot; - please query events list with higher &quot;List Limit&quot;. If Total Number &gt; 50 - call action several times with corresponding offset and limit parameters to collect all events.</description>
+        <developerName>instruction_uselistuse5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_uselistuse5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use the Contact or Lead recordId from IdentifyRecordByName, appointment date time in assigned to user timezone and assigned to user as owner and pass it to appointment booking</description>
+        <developerName>instruction_usethecont6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usethecont6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use the IdentifyRecordByName Action to search user objects to find the assigned to being mentioned in the Appointment booking.</description>
+        <developerName>instruction_usetheiden7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usetheiden7</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use the IdentifyRecordByName Action to search Lead or Contact objects to find the person being mentioned in the Appointment booking.</description>
+        <developerName>instruction_usetheiden8</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usetheiden8</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Whenever user wants to book an appointment, use Check_Appointment_Slots1 and first check if there are open slots. Proceed with booking only when slots are available, else inform the user that there are no slots for the given assigned to user&apos;s time and</description>
+        <developerName>instruction_wheneverus9</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_wheneverus9</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Manage Meeting</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>help book Appointment with contact or lead, and review  meetings scheduled, .
+ get slack user ID of mentioned user and send slack message</scope>
+</GenAiPlugin>

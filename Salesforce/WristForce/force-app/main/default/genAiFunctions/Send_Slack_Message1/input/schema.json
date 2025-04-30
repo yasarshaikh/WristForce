@@ -1,0 +1,21 @@
+{
+  "required" : [ "Message", "UserId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Message" : {
+      "title" : "Message",
+      "description" : "send Slack message",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "UserId" : {
+      "title" : "UserId",
+      "description" : "Send mentioned user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

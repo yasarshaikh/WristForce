@@ -1,0 +1,46 @@
+{
+  "required" : [ "accountName", "contactIds", "dateTimeToCheck", "ownerId", "subject" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "accountName" : {
+      "title" : "accountName",
+      "description" : "accountName",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "contactIds" : {
+      "title" : "contactIds",
+      "description" : "Contact or Lead Name that we want to Book appointment with.",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "dateTimeToCheck" : {
+      "title" : "dateTimeToCheck",
+      "description" : "List of contact Ids and time to schedule meeting",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "ownerId" : {
+      "title" : "ownerId",
+      "description" : "ownerID",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "subject" : {
+      "title" : "subject",
+      "description" : "subject",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

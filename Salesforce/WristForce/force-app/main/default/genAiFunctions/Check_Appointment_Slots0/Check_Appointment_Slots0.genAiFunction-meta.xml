@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to check if an appointment slot is available for the given time</description>
+    <invocationTarget>CheckAppointmentSlots</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Check Appointment Slots</masterLabel>
+</GenAiFunction>

@@ -1,0 +1,25 @@
+{
+  "required" : [ "contactIds", "dateTimeToCheck" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "contactIds" : {
+      "title" : "contactIds",
+      "description" : "Contact or Lead Name that we want to Book appointment with.",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "dateTimeToCheck" : {
+      "title" : "dateTimeToCheck",
+      "description" : "Date for which we want to check the slots. The variable needs to be an Apex Date type with format    year + '-' + month + '-' + day + ' ' + hour + ':' \n    + minute +  ':' + second",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
