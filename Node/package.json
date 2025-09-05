@@ -17,7 +17,7 @@
     "firebase-admin": "^11.11.0",
     "jsforce": "^1.11.1",
     "memory-cache": "^0.2.0",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.1",
     "winston": "^3.11.0"
   },
   "devDependencies": {
